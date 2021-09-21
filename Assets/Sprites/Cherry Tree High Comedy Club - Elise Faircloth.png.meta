@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: 1071b4f75bcee16479b38746bfa2349e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4301091018505368680
+    second: Cherry Tree High Comedy Club - Elise Faircloth_0
+  - first:
+      213: 7166205396893926537
+    second: Cherry Tree High Comedy Club - Elise Faircloth_1
+  - first:
+      213: -336279771835616809
+    second: Cherry Tree High Comedy Club - Elise Faircloth_2
+  - first:
+      213: -4091099984966646857
+    second: Cherry Tree High Comedy Club - Elise Faircloth_3
+  - first:
+      213: -8477354924221541938
+    second: Cherry Tree High Comedy Club - Elise Faircloth_4
+  - first:
+      213: 4019259222563573205
+    second: Cherry Tree High Comedy Club - Elise Faircloth_5
+  - first:
+      213: -6969725879200108649
+    second: Cherry Tree High Comedy Club - Elise Faircloth_6
+  - first:
+      213: 7671548923230198983
+    second: Cherry Tree High Comedy Club - Elise Faircloth_7
+  - first:
+      213: -8256895636403954315
+    second: Cherry Tree High Comedy Club - Elise Faircloth_8
+  - first:
+      213: -2105102888746362616
+    second: Cherry Tree High Comedy Club - Elise Faircloth_9
+  - first:
+      213: -1126686725730966300
+    second: Cherry Tree High Comedy Club - Elise Faircloth_10
+  - first:
+      213: 1829508396202618953
+    second: Cherry Tree High Comedy Club - Elise Faircloth_11
+  - first:
+      213: -143386460674515925
+    second: Cherry Tree High Comedy Club - Elise Faircloth_12
+  - first:
+      213: -5239180859161280130
+    second: Cherry Tree High Comedy Club - Elise Faircloth_13
+  - first:
+      213: -349766458801960858
+    second: Cherry Tree High Comedy Club - Elise Faircloth_14
+  - first:
+      213: -7560960715290197593
+    second: Cherry Tree High Comedy Club - Elise Faircloth_15
+  - first:
+      213: -3638575443708867679
+    second: Cherry Tree High Comedy Club - Elise Faircloth_16
+  - first:
+      213: -4616551116168027577
+    second: Cherry Tree High Comedy Club - Elise Faircloth_17
+  - first:
+      213: -5806828251656340226
+    second: Cherry Tree High Comedy Club - Elise Faircloth_18
+  - first:
+      213: 8770071988871308008
+    second: Cherry Tree High Comedy Club - Elise Faircloth_19
+  - first:
+      213: 136531242455968311
+    second: Cherry Tree High Comedy Club - Elise Faircloth_20
+  - first:
+      213: 2894103510830267735
+    second: Cherry Tree High Comedy Club - Elise Faircloth_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864b2a04e7b80bb30800000000000000
+      internalID: 4301091018505368680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 292
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984895d17d9737360800000000000000
+      internalID: 7166205396893926537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 292
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1b696445b455bf0800000000000000
+      internalID: -336279771835616809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 292
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3057f3d3e7937c0800000000000000
+      internalID: -4091099984966646857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1ddd28c926a5a80800000000000000
+      internalID: -8477354924221541938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 196
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd4d1dc7f647c730800000000000000
+      internalID: 4019259222563573205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 196
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f2e647d3f864f90800000000000000
+      internalID: -6969725879200108649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 196
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc9a2e9911d67a60800000000000000
+      internalID: 7671548923230198983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d5ba46a2d996d80800000000000000
+      internalID: -8256895636403954315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809df94731c29c2e0800000000000000
+      internalID: -2105102888746362616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e468a374643d50f0800000000000000
+      internalID: -1126686725730966300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94070457138b36910800000000000000
+      internalID: 1829508396202618953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c15e116c6920ef0800000000000000
+      internalID: -143386460674515925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e718aa754c0ba47b0800000000000000
+      internalID: -5239180859161280130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 100
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66843c44241652bf0800000000000000
+      internalID: -349766458801960858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1c1740a42121790800000000000000
+      internalID: -7560960715290197593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_16
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab064579ee218dc0800000000000000
+      internalID: -3638575443708867679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7422f592837beefb0800000000000000
+      internalID: -4616551116168027577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc325498700a6fa0800000000000000
+      internalID: -5806828251656340226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2274f020e85b970800000000000000
+      internalID: 8770071988871308008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aa45f017e05e100800000000000000
+      internalID: 136531242455968311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry Tree High Comedy Club - Elise Faircloth_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 4
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dbf3a3fcbe92820800000000000000
+      internalID: 2894103510830267735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

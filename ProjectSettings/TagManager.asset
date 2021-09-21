@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - enemy
+  - playerFireballs
+  - obstacle
+  - enemyProjectile
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Wall
+  - Player
+  - Enemy
+  - obstacle
+  - enemyProjectile
+  - NPC
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3006184091
+    locked: 0
+  - name: Foreground
+    uniqueID: 1511535383
+    locked: 0
+  - name: NPC
+    uniqueID: 3593156291
+    locked: 0
+  - name: Player
+    uniqueID: 3979711569
+    locked: 0
+  - name: Ground
+    uniqueID: 21472117
+    locked: 0
