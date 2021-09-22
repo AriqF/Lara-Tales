@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyDamager : MonoBehaviour
+public class trapDamager : MonoBehaviour
 {
     [SerializeField] protected float damage;
 

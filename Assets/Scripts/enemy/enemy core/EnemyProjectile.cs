@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyProjectile : enemyDamager //inherit from enemyDamager class
+public class EnemyProjectile : trapDamager //inherit from enemyDamager class
 {
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;

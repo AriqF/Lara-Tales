@@ -25,10 +25,12 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.F) && cooldownTimer > attackCooldown && PlayerMovement.canAttack())
         {
             swordAtk();
+            print("sword atk!!");
         }
 
         if (Input.GetKey(KeyCode.E) && cooldownTimer > attackCooldown && PlayerMovement.canAttack() && PlayerMovement.fireSkillUnlocked())
         {
+            print("fireball!!");
             castFireball();
         }
         cooldownTimer += Time.deltaTime;
