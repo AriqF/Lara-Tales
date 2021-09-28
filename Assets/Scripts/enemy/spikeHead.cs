@@ -69,7 +69,7 @@ public class spikeHead : trapDamager
         attacking = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2Ds(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
         //stop spikehead on hit

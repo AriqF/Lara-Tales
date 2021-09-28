@@ -26,7 +26,7 @@ public class EnemyProjectile : trapDamager //inherit from enemyDamager class
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2Ds(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision); //execute logic from parent (enemeyDamager class)
         gameObject.SetActive(false); //deactive object on Hit

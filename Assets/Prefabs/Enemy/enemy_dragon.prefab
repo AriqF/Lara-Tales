@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
-  skillDamage: 1
+  skillDamage: 0.5
 --- !u!1 &1329791185160756875
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
-  skillDamage: 1
+  skillDamage: 0.5
 --- !u!1 &1329791185565055905
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +533,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 10
   _attackDamage: 2
-  _lifePoints: 3
   _attackRadius: 8
   playerFound: 0
   _followRadius: 8
@@ -551,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097d0d6d0f36748498c1c17f56fcebe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 4
+  startingHealth: 2
   iFramesDuration: 2
   numberofFlashes: 1
 --- !u!114 &1329791185565055914
@@ -738,7 +737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
-  skillDamage: 1
+  skillDamage: 0.5
 --- !u!1 &1329791185695169817
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
-  skillDamage: 1
+  skillDamage: 0.5
 --- !u!1 &1329791186140582373
 GameObject:
   m_ObjectHideFlags: 0

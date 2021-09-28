@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  activationDelay: 2
+  activationDelay: 1.5
   activeTime: 2
 --- !u!95 &4309068771023370873
 Animator:

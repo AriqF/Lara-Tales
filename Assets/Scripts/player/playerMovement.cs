@@ -111,8 +111,10 @@ public class playerMovement : MonoBehaviour
 
     public bool fireSkillUnlocked()
     {
+        //string currentScene = SceneManager.GetActiveScene().name;
+        //if (currentScene == "Stage_01"
         Scene currentScene = SceneManager.GetActiveScene();
-        if(currentScene.buildIndex > 0) //change this later
+        if (currentScene.buildIndex > 0) //change this later
         {
             return true;
         }
