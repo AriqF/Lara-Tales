@@ -6,6 +6,7 @@ public class golem_behavior : MonoBehaviour
 {
     private const bool Value = false;
     #region Public Variables
+    [SerializeField] protected GameObject hitBox;
     public Transform rayCast;
     public LayerMask raycastMask;
     public float rayCastLength;
@@ -23,8 +24,15 @@ public class golem_behavior : MonoBehaviour
     private bool inRange; //cek player dijarak
     private bool cooling; //cek musuh cooling habis serang
     private float intTimer;
+    private float trX, trY;
     #endregion
 
+    private void Start()
+    {
+        trX = transform.localScale.x;
+        trY = transform.localScale.y;
+
+    }
     void Awake()
     {
         intTimer = timer; //menyimpan inisialisasi timer
@@ -37,6 +45,7 @@ public class golem_behavior : MonoBehaviour
         {
             hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
             RaycastDebugger();
+
         }
 
         //ketika player kedetek
@@ -69,6 +78,7 @@ public class golem_behavior : MonoBehaviour
             target = trig.gameObject;
             inRange = true;
         }
+
     }
 
     void EnemyLogic()
@@ -82,6 +92,7 @@ public class golem_behavior : MonoBehaviour
         }
         else if(attackDistance >= distance && cooling == false)
         {
+            hitBox.SetActive(true);
             Attack();
         }
 
@@ -94,8 +105,16 @@ public class golem_behavior : MonoBehaviour
 
     void Move()
     {
-        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("golem_attack"))
+        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
+            if (target.transform.position.x < transform.position.y)
+            {
+                transform.localScale = new Vector3(-trX, trY, 1);
+            }
+            else if (target.transform.position.x > transform.position.y)
+            {
+                transform.localScale = new Vector3(trX, trY, 1);
+            }
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
 
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);

@@ -68,10 +68,10 @@ public class enemyHealth : MonoBehaviour
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
 
-        if (dead)
-        {
-            yield return new WaitForSeconds(1);
-            gameObject.SetActive(false);
-        }
+        //if (dead)
+        //{
+        //    yield return new WaitForSeconds(1);
+        //    gameObject.SetActive(false);
+        //}
     }
 }
