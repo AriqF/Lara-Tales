@@ -14,6 +14,7 @@ public class trapDamager : MonoBehaviour
             //get player component from health class
             collision.GetComponent<health>().takeDamage(damage);
         }
+
     }
 
   

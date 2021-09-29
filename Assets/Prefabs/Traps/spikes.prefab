@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d80e35aeed534447b0959344ab17b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0.2
 --- !u!61 &6340042613862865620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5200606898996368539}
   - component: {fileID: 3187718361708316335}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Idle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -57,7 +57,7 @@ public class enemies : MonoBehaviour
     //if player in radius, atk player
     public bool checkAttackRadius(float playerPosition, float enemyPosition)
     {
-        if (Mathf.Abs(playerPosition - enemyPosition) < followRadius)
+        if (Mathf.Abs(playerPosition - enemyPosition) < followRadius )
         {
             //in range for attack
             return true;
@@ -66,5 +66,11 @@ public class enemies : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void enemyDead()
+    {
+        gameObject.SetActive(false);
+        
     }
 }

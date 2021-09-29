@@ -12,6 +12,7 @@ TagManager:
   - NPC
   - playerSword
   - enemyTriggerArea
+  - secretTile
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - NPC
   - Background
   - enemyTriggerArea
-  - 
+  - SecretTile
   - 
   - 
   - 

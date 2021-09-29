@@ -18,14 +18,14 @@ public class wizard_scripts : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         enemyMove = GetComponent<enemyMovement>();
-        attackCooldown = 2.4f;
+        attackCooldown = 2.9f;
     }
 
     private void Update()
     {
         if (isLowHp())
         {
-            attackCooldown = 2.2f;
+            attackCooldown = 2.6f;
         }
 
         cooldownTimer += Time.deltaTime;
