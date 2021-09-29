@@ -25,6 +25,7 @@ public class golem_behavior : MonoBehaviour
     private bool cooling; //cek musuh cooling habis serang
     private float intTimer;
     private float trX, trY;
+    private PolygonCollider2D colliderBox;
     #endregion
 
     private void Start()
@@ -163,5 +164,10 @@ public class golem_behavior : MonoBehaviour
     public void TriggerCooling()
     {
         cooling = true;
+    }
+
+    public void enemyDead()
+    {
+        gameObject.SetActive(false);
     }
 }
