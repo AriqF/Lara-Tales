@@ -13,6 +13,11 @@ public class golem_hitBox : MonoBehaviour
         if (hit) return;
     }
 
+    private void DeactiveHitBox()
+    {
+        gameObject.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //if enemy has collision with player

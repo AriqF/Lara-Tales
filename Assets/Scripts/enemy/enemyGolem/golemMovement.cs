@@ -55,7 +55,7 @@ public class golemMovement : enemyFollowPlayer
                     this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
                     enemyAttack();
                     print("player found");
-                    enemyAnim.SetBool("walk", true);
+                    enemyAnim.SetBool("CanWalk", true);
                 }
             }
             //if player behind the enemy
@@ -74,13 +74,13 @@ public class golemMovement : enemyFollowPlayer
                     this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
                     enemyAttack();
                     print("player found");
-                    enemyAnim.SetBool("walk", true);
+                    enemyAnim.SetBool("CanWalk", true);
                 }
             }
         }
         else
         {
-            enemyAnim.SetBool("walk", false);
+            enemyAnim.SetBool("CanWalk", false);
         }
     }
 
