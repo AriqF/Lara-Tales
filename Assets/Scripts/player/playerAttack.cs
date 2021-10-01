@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
+    [SerializeField] private float fireballAttackCooldown;
+    [SerializeField] private float swordAttackCooldown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireballs;
     [SerializeField] private GameObject swordHitBox;
@@ -22,13 +23,13 @@ public class playerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.F) && cooldownTimer > attackCooldown && PlayerMovement.canAttack())
+        if (Input.GetKey(KeyCode.F) && cooldownTimer > swordAttackCooldown && PlayerMovement.canAttack())
         {
             swordAtk();
             print("sword atk!!");
         }
 
-        if (Input.GetKey(KeyCode.E) && cooldownTimer > attackCooldown && PlayerMovement.canAttack() && PlayerMovement.fireSkillUnlocked())
+        if (Input.GetKey(KeyCode.E) && cooldownTimer > fireballAttackCooldown && PlayerMovement.canAttack() && PlayerMovement.fireSkillUnlocked())
         {
             print("fireball!!");
             castFireball();

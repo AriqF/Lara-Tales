@@ -6,7 +6,7 @@ public class projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] protected float skillDamage;
-    [SerializeField] protected GameObject ignoreCollision;
+    //[SerializeField] protected GameObject ignoreCollision;
 
     private bool hit;
     private float direction;

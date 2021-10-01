@@ -7,6 +7,7 @@ public class wizard_scripts : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] firebolts;
     [SerializeField] private GameObject[] cross;
+    [SerializeField] private GameObject healthBar;
 
     private Animator anim;
     private enemyMovement enemyMove;
@@ -28,8 +29,13 @@ public class wizard_scripts : MonoBehaviour
             attackCooldown = 2.6f;
         }
 
+        if(gameObject.GetComponent<enemyMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
+        {
+            healthBar.SetActive(true);
+        }
+
         cooldownTimer += Time.deltaTime;
-        if (cooldownTimer > attackCooldown && gameObject.GetComponent<enemyMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
+        if (cooldownTimer > attackCooldown && gameObject.GetComponent<enemyMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false && gameObject.GetComponent<enemyMovement>().attackMode == true)
         {
             if (isLowHp())
             {

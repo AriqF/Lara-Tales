@@ -22,7 +22,7 @@ public class dragonScripts : MonoBehaviour
     {
         //attack();
         cooldownTimer += Time.deltaTime;
-        if (cooldownTimer > attackCooldown && gameObject.GetComponent<enemyMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
+        if (cooldownTimer > attackCooldown && gameObject.GetComponent<enemyMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false && gameObject.GetComponent<enemyMovement>().attackMode == true)
         {
             attack();
         }

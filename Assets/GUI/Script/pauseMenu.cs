@@ -6,8 +6,17 @@ using UnityEngine.SceneManagement;
 public class pauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenuObject;
+    [SerializeField] GameObject restartPanel;
+    [SerializeField] GameObject playerDiePanel;
+    [SerializeField] GameObject player;
 
     private bool isPaused;
+    private int loadedScene;
+
+    private void Awake()
+    {
+        loadedScene = SceneManager.GetActiveScene().buildIndex;
+    }
 
     private void Update()
     {
@@ -15,12 +24,37 @@ public class pauseMenu : MonoBehaviour
         {
             Pause();
         }
+        if(player.GetComponent<health>().currentHealth == 0)
+        {
+            showPlayerDiePanel();
+        }
     }
 
     public void Pause()
     {
         pauseMenuObject.SetActive(true);
         Time.timeScale = 0f;        
+    }
+
+    public void showRestartPanel()
+    {
+        restartPanel.gameObject.SetActive(true);
+    }
+
+    public void hideRestartPanel()
+    {
+        restartPanel.gameObject.SetActive(false);
+    }
+
+    private void showPlayerDiePanel()
+    {
+        Time.timeScale = 0f;
+        playerDiePanel.gameObject.SetActive(true);
+    }
+
+    public void Restart() 
+    {
+        SceneManager.LoadScene(loadedScene);
     }
 
     public void Resume()

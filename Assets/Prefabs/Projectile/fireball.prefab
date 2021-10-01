@@ -166,3 +166,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   skillDamage: 1
+  ignoreCollision: {fileID: 0}

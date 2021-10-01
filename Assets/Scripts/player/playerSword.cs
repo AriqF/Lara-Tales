@@ -21,6 +21,10 @@ public class playerSword : MonoBehaviour
             collision.GetComponent<enemyHealth>().takeDamage(damage);
             print("enemy hit!");
         }
+        if(collision.tag == "enemyProjectile")
+        {
+
+        }
     }
 
     private void DeactiveSword()

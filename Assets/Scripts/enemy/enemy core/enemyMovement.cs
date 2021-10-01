@@ -9,6 +9,7 @@ public class enemyMovement : enemies
     public float _attackRadius;
 
     public bool playerFound;
+    public bool attackMode;
     private float trX;
     private float trY;
 
@@ -45,17 +46,17 @@ public class enemyMovement : enemies
             {
                 transform.localScale = new Vector3(-trX, trY, 1);
                 playerFound = true;
-                if (checkAttackRadius(playerTransform.position.x, transform.position.x))
+                if (checkAttackRadius(playerTransform.position.x, transform.position.x, playerTransform.position.y, transform.position.y))
                 {
                     enemyAttack();
                     print("player found");
                 }
                 else
                 {
-                    this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
+                    //this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
                     enemyAttack();
                     print("player found");
-                    enemyAnim.SetBool("walk", true);
+                    //enemyAnim.SetBool("walk", true);
                 }
             }
             //if player behind the enemy
@@ -64,28 +65,34 @@ public class enemyMovement : enemies
 
                 transform.localScale = new Vector3(trX, trY, 1);
                 playerFound = true;
-                if (checkAttackRadius(playerTransform.position.x, transform.position.x))
+                if (checkAttackRadius(playerTransform.position.x, transform.position.x, playerTransform.position.y, transform.position.y))
                 {
                     enemyAttack();
                     print("player found");
                 }
                 else
                 {
-                    this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
+                    //this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
                     enemyAttack();
                     print("player found");
-                    enemyAnim.SetBool("walk", true);             
+                    //enemyAnim.SetBool("walk", true);             
                 }
             }
         }
         else
         {
             enemyAnim.SetBool("walk", false);
+            enemyStopAttack();
         }
     }
 
     public void enemyAttack()
     {
-        
+        attackMode = true;
+    }
+
+    public void enemyStopAttack()
+    {
+        attackMode = false;
     }
 }

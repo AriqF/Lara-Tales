@@ -55,9 +55,9 @@ public class enemies : MonoBehaviour
         }
     }
     //if player in radius, atk player
-    public bool checkAttackRadius(float playerPosition, float enemyPosition)
+    public bool checkAttackRadius(float playerPosition, float enemyPosition, float playerPositionY, float enemyPositionY)
     {
-        if (Mathf.Abs(playerPosition - enemyPosition) < followRadius )
+        if (Mathf.Abs(playerPosition - enemyPosition) < followRadius && playerPositionY == enemyPositionY)
         {
             //in range for attack
             return true;
