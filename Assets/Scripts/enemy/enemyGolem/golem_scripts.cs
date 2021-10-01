@@ -8,20 +8,20 @@ public class golem_scripts : MonoBehaviour
     [SerializeField] private GameObject swordHitBox;
 
     private Animator anim;
-    private enemyMovement enemyMove;
+    private golemMovement enemyMove;
     private float cooldownTimer = Mathf.Infinity;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        enemyMove = GetComponent<enemyMovement>();
+        enemyMove = GetComponent<golemMovement>();
     }
 
     private void Update()
     {
         //attack();
         cooldownTimer += Time.deltaTime;
-        if (cooldownTimer > attackCooldown && gameObject.GetComponent<enemyMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
+        if (cooldownTimer > attackCooldown && gameObject.GetComponent<golemMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
         {
             attack();
         }
@@ -29,7 +29,7 @@ public class golem_scripts : MonoBehaviour
 
     private void attack()
     {
-        anim.SetTrigger("attack");
+        anim.SetTrigger("Attack");
         cooldownTimer = 0;
     }
 }
