@@ -22,6 +22,11 @@ public class enemyHealth : MonoBehaviour
         enemySpriteRend = GetComponent<SpriteRenderer>();
     }
 
+    public void addCurrHealth(float _health)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + _health, 0, startingHealth);
+    }
+
     public void takeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
@@ -56,22 +61,17 @@ public class enemyHealth : MonoBehaviour
 
     private IEnumerator Invunerability()
     {
-        Physics2D.IgnoreLayerCollision(10, 11, true);
+        Physics2D.IgnoreLayerCollision(8, 9, true);
         //Invunerability duration
 
         for (int i = 0; i < numberofFlashes; i++)
         {
             enemySpriteRend.color = new Color(1, 0, 0, 0.5f);
-            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 3)); //2s / numberofFlashes (3) *2 = 0.33s
+            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 2)); //2s / numberofFlashes (3) *2 = 0.33s
             enemySpriteRend.color = Color.white;
-            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 3));
+            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 2));
         }
-        Physics2D.IgnoreLayerCollision(10, 11, false);
+        Physics2D.IgnoreLayerCollision(8, 9, false);
 
-        //if (dead)
-        //{
-        //    yield return new WaitForSeconds(1);
-        //    gameObject.SetActive(false);
-        //}
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class health : MonoBehaviour
 {
@@ -40,8 +41,7 @@ public class health : MonoBehaviour
                 anim.SetTrigger("die");
                 GetComponent<playerMovement>().enabled = false;
                 dead = true;
-            }
-           
+            }     
         }
     }
 
@@ -64,5 +64,6 @@ public class health : MonoBehaviour
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
     }
+
   
 }
