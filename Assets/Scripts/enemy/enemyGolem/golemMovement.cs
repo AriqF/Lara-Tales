@@ -9,6 +9,7 @@ public class golemMovement : enemyFollowPlayer
     public float _attackRadius;
 
     public bool playerFound;
+    public bool attackMode;
     private float trX;
     private float trY;
 
@@ -77,6 +78,8 @@ public class golemMovement : enemyFollowPlayer
                     enemyAnim.SetBool("CanWalk", true);
                 }
             }
+
+
         }
         else
         {
@@ -86,6 +89,11 @@ public class golemMovement : enemyFollowPlayer
 
     public void enemyAttack()
     {
+        attackMode = true;
+    }
 
+    public void enemyStopAttack()
+    {
+        attackMode = false;
     }
 }

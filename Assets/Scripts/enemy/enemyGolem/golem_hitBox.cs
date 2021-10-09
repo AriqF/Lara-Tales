@@ -13,6 +13,11 @@ public class golem_hitBox : MonoBehaviour
         if (hit) return;
     }
 
+    public void setDamage(float _damage)
+    {
+        damage = _damage;
+    }
+
     private void DeactiveHitBox()
     {
         gameObject.SetActive(false);

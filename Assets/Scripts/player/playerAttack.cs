@@ -15,8 +15,7 @@ public class playerAttack : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
 
     private void Awake()
-    {
-        
+    {   
         anim = GetComponent<Animator>();
         PlayerMovement = GetComponent<playerMovement>();
     }
@@ -42,8 +41,6 @@ public class playerAttack : MonoBehaviour
         anim.SetTrigger("swordAtk");
         cooldownTimer = 0;
     }
-
-   
 
     private void castFireball()
     {
