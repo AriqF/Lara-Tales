@@ -25,7 +25,7 @@ public class cameraController : MonoBehaviour
         //    ref velocity, speed);
 
         //follow player
-        transform.position = new Vector3(player.position.x + lookAhead, player.position.y + 2 + lookDown, transform.position.z);
+        transform.position = new Vector3(player.position.x + lookAhead, player.position.y  + lookDown, transform.position.z);
         //camera will follow only the x axis, change to player.position will follow the axis on that position
         lookAhead = Mathf.Lerp(lookAhead, (aheadDistance * player.localScale.x),  0 * cameraFolSpeed);
         lookDown = Mathf.Lerp(lookDown, (downDistance * player.localScale.y),  0 * cameraFolSpeed);

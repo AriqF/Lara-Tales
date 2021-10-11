@@ -29,7 +29,6 @@ public class golem_hitBox : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.GetComponent<health>().takeDamage(damage);
-            print("player hit by golem!");
         }
     }
 

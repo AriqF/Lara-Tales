@@ -10,6 +10,7 @@ public class health : MonoBehaviour
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
+    public bool fallToDeath;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -50,6 +51,20 @@ public class health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
 
+    public void relife()
+    {
+        currentHealth = startingHealth;
+    }
+
+    public void instantKill()
+    {
+        currentHealth = 0;
+        anim.SetTrigger("die");
+        GetComponent<playerMovement>().enabled = false;
+        dead = true;
+        fallToDeath = true;
+    }
+
     private IEnumerator Invunerability()
     {
         Physics2D.IgnoreLayerCollision(10, 11, true);
@@ -63,7 +78,5 @@ public class health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 3));
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
-    }
-
-  
+    }  
 }

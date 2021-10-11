@@ -49,13 +49,11 @@ public class enemyMovement : enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x, playerTransform.position.y, transform.position.y))
                 {
                     enemyAttack();
-                    print("player found");
                 }
                 else
                 {
                     //this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
                     enemyAttack();
-                    print("player found");
                     //enemyAnim.SetBool("walk", true);
                 }
             }
@@ -68,13 +66,11 @@ public class enemyMovement : enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x, playerTransform.position.y, transform.position.y))
                 {
                     enemyAttack();
-                    print("player found");
                 }
                 else
                 {
                     //this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
                     enemyAttack();
-                    print("player found");
                     //enemyAnim.SetBool("walk", true);             
                 }
             }

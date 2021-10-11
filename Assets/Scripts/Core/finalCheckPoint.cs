@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class finalCheckPoint : MonoBehaviour
+public class finalCheckPoint : GameManager
 {
     [SerializeField] GameObject enemyBoss;
 
@@ -16,7 +16,7 @@ public class finalCheckPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player") && enemyBoss.GetComponent<enemyHealth>().currentHealth <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            StartCoroutine(base.loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         }
     }
 

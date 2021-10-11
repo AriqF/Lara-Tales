@@ -7,12 +7,15 @@ public class playerAttack : MonoBehaviour
     [SerializeField] private float fireballAttackCooldown;
     [SerializeField] private float swordAttackCooldown;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] fireballs;
     [SerializeField] private GameObject swordHitBox;
+    [SerializeField] private GameObject[] fireballs;
+
 
     private Animator anim;
     private playerMovement PlayerMovement;
+    private Rigidbody2D rigid;
     private float cooldownTimer = Mathf.Infinity;
+    private bool isBlocking;
 
     private void Awake()
     {   
@@ -25,12 +28,10 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.F) && cooldownTimer > swordAttackCooldown && PlayerMovement.canAttack())
         {
             swordAtk();
-            print("sword atk!!");
         }
 
         if (Input.GetKey(KeyCode.E) && cooldownTimer > fireballAttackCooldown && PlayerMovement.canAttack() && PlayerMovement.fireSkillUnlocked())
         {
-            print("fireball!!");
             castFireball();
         }
         cooldownTimer += Time.deltaTime;

@@ -118,7 +118,7 @@ public class playerMovement : MonoBehaviour
         //string currentScene = SceneManager.GetActiveScene().name;
         //if (currentScene == "Stage_01"
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.buildIndex > 0) //change this later
+        if (currentScene.buildIndex > 2) 
         {
             return true;
         }

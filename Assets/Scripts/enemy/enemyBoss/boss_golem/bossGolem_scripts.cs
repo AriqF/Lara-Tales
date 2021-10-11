@@ -6,6 +6,7 @@ public class bossGolem_scripts : MonoBehaviour
 {
     [SerializeField] private float meleeAttackCooldown;
     [SerializeField] private GameObject hitBox;
+    [SerializeField] private GameObject healthBar;
 
     private Animator anim;
     private bossGolemMovement enemyMove;
@@ -25,10 +26,8 @@ public class bossGolem_scripts : MonoBehaviour
     {
         if(hasUsed == false)
         {
-            print("hasUsed false");
             if (gameObject.GetComponent<enemyHealth>().currentHealth <= 2)
-            {
-                print("boss health <= 2");
+            {  
                 anim.SetTrigger("buffArmor");
                 StartCoroutine(waitAddition());       
                 gameObject.GetComponent<enemyHealth>().addCurrHealth(2);
@@ -36,7 +35,12 @@ public class bossGolem_scripts : MonoBehaviour
                 hasUsed = true;
             }
         }
-              
+
+        if (gameObject.GetComponent<bossGolemMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
+        {
+            healthBar.SetActive(true);
+        }
+
         cooldownTimer += Time.deltaTime;
 
         if (cooldownTimer > meleeAttackCooldown && gameObject.GetComponent<bossGolemMovement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false )
