@@ -7,6 +7,7 @@ public class pauseMenu : GameManager
 {
     [SerializeField] GameObject pauseMenuObject;
     [SerializeField] GameObject restartPanel;
+    [SerializeField] GameObject warningPanel;
     [SerializeField] GameObject playerDiePanel;
     [SerializeField] GameObject player;
 
@@ -37,18 +38,28 @@ public class pauseMenu : GameManager
 
     public void showRestartPanel()
     {
-        restartPanel.gameObject.SetActive(true);
+        restartPanel.SetActive(true);
     }
 
     public void hideRestartPanel()
     {
-        restartPanel.gameObject.SetActive(false);
+        restartPanel.SetActive(false);
     }
 
     public void showPlayerDiePanel()
     {
         Time.timeScale = 0f;
-        playerDiePanel.gameObject.SetActive(true);
+        playerDiePanel.SetActive(true);
+    }
+
+    public void showMainMenuWarning()
+    {
+        warningPanel.SetActive(true);
+    }
+
+    public void hideMainMenuWarning()
+    {
+        warningPanel.SetActive(false);
     }
 
     public void Restart() 
