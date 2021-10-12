@@ -68,7 +68,6 @@ public class wizard_scripts : MonoBehaviour
     private void normalAtk()
     {
         gameObject.GetComponent<enemyMovement>().enemyAttack();
-        print("atk");
         cooldownTimer = 0;
         firebolts[findFirebolts()].transform.position = firePoint.position;
         firebolts[findFirebolts()].GetComponent<firebolts>().setDirection(Mathf.Sign(transform.localScale.x));
@@ -77,7 +76,6 @@ public class wizard_scripts : MonoBehaviour
     private void superAtk()
     {
         gameObject.GetComponent<enemyMovement>().enemyAttack();
-        print("superAtk");
         cooldownTimer = 0;
         cross[findCross()].transform.position = firePoint.position;
         cross[findCross()].GetComponent<cross>().setDirection(Mathf.Sign(transform.localScale.x));

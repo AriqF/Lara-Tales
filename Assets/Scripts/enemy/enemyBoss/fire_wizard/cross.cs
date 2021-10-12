@@ -39,6 +39,7 @@ public class cross : MonoBehaviour
         {
             collision.GetComponent<health>().takeDamage(skillDamage);
         }
+        Physics2D.IgnoreLayerCollision(9, 11, true);
         anim.SetTrigger("explode");
     }
 

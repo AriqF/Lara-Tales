@@ -7,12 +7,14 @@ public class playerAttack : MonoBehaviour
     [SerializeField] private float fireballAttackCooldown;
     [SerializeField] private float swordAttackCooldown;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] fireballs;
     [SerializeField] private GameObject swordHitBox;
+    [SerializeField] private GameObject[] fireballs;
+
 
     private Animator anim;
     private playerMovement PlayerMovement;
     private float cooldownTimer = Mathf.Infinity;
+    private float comboCoolDown;
 
     private void Awake()
     {   
@@ -24,21 +26,36 @@ public class playerAttack : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F) && cooldownTimer > swordAttackCooldown && PlayerMovement.canAttack())
         {
-            swordAtk();
-            print("sword atk!!");
+            if (PlayerMovement.isGrounded())
+            {
+                swordAtk1();
+            }
+               
+            else if (!PlayerMovement.isGrounded() && !PlayerMovement.onWall())
+            {
+                gameObject.GetComponent<Rigidbody2D>().gravityScale = 7;
+                jumpAtk();
+            }
+                
         }
 
-        if (Input.GetKey(KeyCode.E) && cooldownTimer > fireballAttackCooldown && PlayerMovement.canAttack() && PlayerMovement.fireSkillUnlocked())
+        if (Input.GetKey(KeyCode.E) && cooldownTimer > fireballAttackCooldown && PlayerMovement.canAttack() && 
+            PlayerMovement.fireSkillUnlocked() && PlayerMovement.isGrounded())
         {
-            print("fireball!!");
             castFireball();
         }
         cooldownTimer += Time.deltaTime;
     }
 
-    private void swordAtk()
+    private void swordAtk1()
     {
         anim.SetTrigger("swordAtk");
+        cooldownTimer = 0;
+    }
+
+    private void jumpAtk()
+    {
+        anim.SetTrigger("jumpAtk");      
         cooldownTimer = 0;
     }
 

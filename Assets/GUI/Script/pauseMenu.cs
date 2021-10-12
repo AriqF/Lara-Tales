@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pauseMenu : MonoBehaviour
+public class pauseMenu : GameManager
 {
     [SerializeField] GameObject pauseMenuObject;
     [SerializeField] GameObject restartPanel;
+    [SerializeField] GameObject warningPanel;
     [SerializeField] GameObject playerDiePanel;
     [SerializeField] GameObject player;
 
-    private bool isPaused;
     private int loadedScene;
 
     private void Awake()
@@ -38,23 +38,37 @@ public class pauseMenu : MonoBehaviour
 
     public void showRestartPanel()
     {
-        restartPanel.gameObject.SetActive(true);
+        restartPanel.SetActive(true);
     }
 
     public void hideRestartPanel()
     {
-        restartPanel.gameObject.SetActive(false);
+        restartPanel.SetActive(false);
     }
 
-    private void showPlayerDiePanel()
+    public void showPlayerDiePanel()
     {
         Time.timeScale = 0f;
-        playerDiePanel.gameObject.SetActive(true);
+        playerDiePanel.SetActive(true);
+    }
+
+    public void showMainMenuWarning()
+    {
+        warningPanel.SetActive(true);
+    }
+
+    public void hideMainMenuWarning()
+    {
+        warningPanel.SetActive(false);
     }
 
     public void Restart() 
     {
-        SceneManager.LoadScene(loadedScene);
+        if (player.GetComponent<health>().currentHealth == 0)
+            player.GetComponent<health>().relife();
+
+        StartCoroutine(base.loadLevel(loadedScene));     
+        Time.timeScale = 1f;
     }
 
     public void Resume()
@@ -66,6 +80,6 @@ public class pauseMenu : MonoBehaviour
     public void Home(int sceneID)
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(sceneID);
+        StartCoroutine(base.loadLevel(sceneID));
     }
 }

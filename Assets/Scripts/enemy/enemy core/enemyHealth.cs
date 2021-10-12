@@ -67,9 +67,9 @@ public class enemyHealth : MonoBehaviour
         for (int i = 0; i < numberofFlashes; i++)
         {
             enemySpriteRend.color = new Color(1, 0, 0, 0.5f);
-            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 2)); //2s / numberofFlashes (3) *2 = 0.33s
+            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 4)); //2s / numberofFlashes (3) *2 = 0.33s
             enemySpriteRend.color = Color.white;
-            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 2));
+            yield return new WaitForSeconds(iFramesDuration / (numberofFlashes * 4));
         }
         Physics2D.IgnoreLayerCollision(8, 9, false);
 

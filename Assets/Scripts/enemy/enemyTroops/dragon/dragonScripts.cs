@@ -32,7 +32,6 @@ public class dragonScripts : MonoBehaviour
     {
         anim.SetTrigger("attack");
         gameObject.GetComponent<enemyMovement>().enemyAttack();
-        print("atk");
         cooldownTimer = 0;
 
         //pool fireball

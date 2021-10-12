@@ -96,13 +96,13 @@ public class playerMovement : MonoBehaviour
         }   
     }
 
-    private bool isGrounded()
+    public bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
     }
 
-    private bool onWall()
+    public bool onWall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
@@ -110,7 +110,7 @@ public class playerMovement : MonoBehaviour
 
     public bool canAttack()
     {
-        return horizontalInput == 0 && isGrounded() && !onWall();
+        return horizontalInput == 0 && !onWall();
     }
 
     public bool fireSkillUnlocked()
@@ -118,7 +118,7 @@ public class playerMovement : MonoBehaviour
         //string currentScene = SceneManager.GetActiveScene().name;
         //if (currentScene == "Stage_01"
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.buildIndex > 0) //change this later
+        if (currentScene.buildIndex > 2) 
         {
             return true;
         }

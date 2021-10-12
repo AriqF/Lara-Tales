@@ -19,7 +19,6 @@ public class playerSword : MonoBehaviour
         if (collision.tag == "enemy")
         {
             collision.GetComponent<enemyHealth>().takeDamage(damage);
-            print("enemy hit!");
         }
         if(collision.tag == "enemyProjectile")
         {

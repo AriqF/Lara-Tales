@@ -47,7 +47,7 @@ public class bossGolemMovement : enemyFollowPlayer
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x, playerTransform.position.y, transform.position.y))
                 {
                     enemyAttack();
-                    print("player found");
+                    
                 }
                 else
                 {
@@ -55,7 +55,7 @@ public class bossGolemMovement : enemyFollowPlayer
                         this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
 
                     enemyAttack();
-                    print("player found");
+                    
                     enemyAnim.SetBool("CanWalk", true);
                 }
             }
@@ -68,7 +68,7 @@ public class bossGolemMovement : enemyFollowPlayer
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x, playerTransform.position.y, transform.position.y))
                 {
                     enemyAttack();
-                    print("player found");
+                    
                 }
                 else
                 {
@@ -76,7 +76,7 @@ public class bossGolemMovement : enemyFollowPlayer
                         this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0.0f, 0.0f);
 
                     enemyAttack();
-                    print("player found");
+                    
                     enemyAnim.SetBool("CanWalk", true);
                 }
             }
