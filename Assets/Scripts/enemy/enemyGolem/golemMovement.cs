@@ -29,15 +29,12 @@ public class golemMovement : enemyFollowPlayer
         boxCollider = GetComponent<BoxCollider2D>();
         groundLayer = LayerMask.GetMask("Ground");
 
-        trX = transform.localScale.x;
-        trY = transform.localScale.y;
     }
 
     void Start()
     {
         //get the player transform
         playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
-
 
         //enemy animation and sprite renderer
         enemyAnim = gameObject.GetComponent<Animator>();

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 876734285200855715}
   - component: {fileID: 876734285200855708}
   - component: {fileID: 6572843202466051951}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: fireball
   m_TagString: playerFireballs
   m_Icon: {fileID: 0}
@@ -164,5 +164,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc26609124f6b6d41a78a3f94f9b281a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  skillDamage: 0.9
+  speed: 15
+  skillDamage: 0.5

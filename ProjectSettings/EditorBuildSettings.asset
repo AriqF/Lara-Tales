@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage_fire.unity
     guid: 58e02072d824b424680d190b0b570d6d
+  - enabled: 1
+    path: Assets/Scenes/last_stage.unity
+    guid: c295cbd40b3fd4247858f67dfb11c777
   m_configObjects: {}

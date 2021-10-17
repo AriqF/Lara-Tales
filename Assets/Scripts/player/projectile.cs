@@ -40,6 +40,7 @@ public class projectile : MonoBehaviour
         {
             collision.GetComponent<enemyHealth>().takeDamage(skillDamage);
         }
+        Physics2D.IgnoreLayerCollision(8, 16, true);
         anim.SetTrigger("explode");
     }
 

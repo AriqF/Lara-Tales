@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class pauseMenu : GameManager
 {
+    [Header ("Panel")]
     [SerializeField] GameObject pauseMenuObject;
     [SerializeField] GameObject restartPanel;
     [SerializeField] GameObject warningPanel;
     [SerializeField] GameObject playerDiePanel;
+
+    [Header("Others")]
+    [SerializeField] GameObject gameManager;
     [SerializeField] GameObject player;
 
     private int loadedScene;
+    public bool isPaused { get; private set; }
 
     private void Awake()
     {
@@ -28,12 +33,21 @@ public class pauseMenu : GameManager
         {
             showPlayerDiePanel();
         }
+        //if (isPaused)
+        //{
+        //    gameManager.GetComponent<AudioSource>().Pause();
+        //}
+        //else
+        //{
+        //    gameManager.GetComponent<AudioSource>().Play();
+        //}
     }
 
     public void Pause()
     {
         pauseMenuObject.SetActive(true);
-        Time.timeScale = 0f;        
+        Time.timeScale = 0f;
+        gameManager.GetComponent<AudioSource>().Pause();
     }
 
     public void showRestartPanel()
@@ -69,12 +83,14 @@ public class pauseMenu : GameManager
 
         StartCoroutine(base.loadLevel(loadedScene));     
         Time.timeScale = 1f;
+        isPaused = false;
     }
 
     public void Resume()
     {
         pauseMenuObject.SetActive(false);
         Time.timeScale = 1f;
+        gameManager.GetComponent<AudioSource>().Play();
     }
 
     public void Home(int sceneID)
