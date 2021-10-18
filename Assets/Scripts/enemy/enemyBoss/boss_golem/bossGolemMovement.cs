@@ -16,17 +16,26 @@ public class bossGolemMovement : enemyFollowPlayer
     public float _followRadius;
     [SerializeField] Transform playerTransform; //player object
     [SerializeField] Animator enemyAnim;
-    SpriteRenderer enemySR;
+
+    private Rigidbody2D body;
+    private BoxCollider2D boxCollider;
+    private LayerMask groundLayer;
+
+    private void Awake()
+    {
+        //reference for rigidbody and animator from object
+        body = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        groundLayer = LayerMask.GetMask("Ground");
+    }
 
     void Start()
     {
         //get the player transform
         playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
 
-
         //enemy animation and sprite renderer
         enemyAnim = gameObject.GetComponent<Animator>();
-        enemySR = GetComponent<SpriteRenderer>();
         //set the variables
         setMoveSpeed(_moveSpeed);
         setAttackRadius(_attackRadius);
@@ -87,6 +96,24 @@ public class bossGolemMovement : enemyFollowPlayer
         {
             enemyAnim.SetBool("CanWalk", false);
         }
+
+        if (isGrounded())
+        {
+            body.gravityScale = 0;
+            body.velocity = Vector2.zero;
+            print(" ground");
+        }
+        else
+        {
+            body.gravityScale = 1;
+            print("not ground");
+        }
+    }
+
+    public bool isGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
     }
 
     public void enemyAttack()
