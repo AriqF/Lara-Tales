@@ -1,31 +1,33 @@
 using System.Collections;
 using UnityEngine;
 
-    public class DialogueHolder : MonoBehaviour
+public class DialogueHolder : MonoBehaviour
+{
+    private void Awake()
     {
-        private void Awake()
-        {
-            StartCoroutine(dialogueSequence());
-        }
+        StartCoroutine(dialogueSequence());
+    }
 
-        private IEnumerator dialogueSequence()
+    private IEnumerator dialogueSequence()
+    {
+        for(int i = 1; i < transform.childCount; i++)
         {
-            for(int i = 0; i < transform.childCount; i++)
-            {
-                Deactive();
-                transform.GetChild(i).gameObject.SetActive(true);
-                yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);
-            }
-            gameObject.SetActive(false);
+            Deactive();
+            transform.GetChild(i).gameObject.SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(true);
+            yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);
         }
+        gameObject.SetActive(false);
 
-        private void Deactive()
+    }
+
+    private void Deactive()
+    {
+        for (int i = 0; i < transform.childCount; i++)
         {
-            for (int i = 0; i < transform.childCount; i++)
-            {
-                transform.GetChild(i).gameObject.SetActive(false);
-            }
+            transform.GetChild(i).gameObject.SetActive(false);
         }
     }
+}
 
 

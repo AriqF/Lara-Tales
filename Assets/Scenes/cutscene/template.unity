@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fa95802f80bd745cfb5e9c89f7e22341, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.6197082, g: 0.9216259, b: 0.97588295, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -255,7 +255,7 @@ RectTransform:
   m_Children:
   - {fileID: 2142056589}
   m_Father: {fileID: 1940217818}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conTxt: {fileID: 1574595929}
   _input: baru kenal udh ajak kawin aja deh lu, kutil kuda
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -526,7 +527,7 @@ RectTransform:
   m_Children:
   - {fileID: 845274112}
   m_Father: {fileID: 1940217818}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -545,6 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conTxt: {fileID: 1574595929}
   _input: halo saya lara
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -1510,7 +1512,7 @@ RectTransform:
   m_Children:
   - {fileID: 631312553}
   m_Father: {fileID: 1940217818}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1529,6 +1531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conTxt: {fileID: 1574595929}
   _input: halo saya traveller
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -1679,8 +1682,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846516148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.1477, y: 2.4741, z: 4.3245807}
-  m_LocalScale: {x: 6.0799007, y: 4.553445, z: 1}
+  m_LocalPosition: {x: -13.4591, y: -0.2348, z: 4.3245807}
+  m_LocalScale: {x: 4.9895964, y: 3.7246485, z: 1}
   m_Children: []
   m_Father: {fileID: 758412857}
   m_RootOrder: 3
@@ -1789,7 +1792,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5850205
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1813,7 +1816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055546336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 2.83, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 758412857}
@@ -1896,8 +1899,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106196079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2966213, y: 0.75609946, z: 10.545019}
-  m_LocalScale: {x: 5.6035233, y: 3.547655, z: 1}
+  m_LocalPosition: {x: 4.1, y: 0.99, z: 10.545019}
+  m_LocalScale: {x: 4.478336, y: 4.1057014, z: 1}
   m_Children: []
   m_Father: {fileID: 1290470955}
   m_RootOrder: 0
@@ -2132,8 +2135,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360305207}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.1477, y: 2.4741, z: 4.3245807}
-  m_LocalScale: {x: 6.0799007, y: 4.553445, z: 1}
+  m_LocalPosition: {x: -13.4591, y: -0.2348, z: 4.3245807}
+  m_LocalScale: {x: 4.9895964, y: 3.7246485, z: 1}
   m_Children: []
   m_Father: {fileID: 758412857}
   m_RootOrder: 1
@@ -2214,8 +2217,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378166718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.1477, y: 2.4741, z: 4.3245807}
-  m_LocalScale: {x: 6.0799007, y: 4.553445, z: 1}
+  m_LocalPosition: {x: -13.4591, y: -0.2348, z: 4.3245807}
+  m_LocalScale: {x: 4.9895964, y: 3.7246485, z: 1}
   m_Children: []
   m_Father: {fileID: 758412857}
   m_RootOrder: 0
@@ -2378,7 +2381,7 @@ RectTransform:
   m_Children:
   - {fileID: 1471302803}
   m_Father: {fileID: 1940217818}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2397,6 +2400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conTxt: {fileID: 1574595929}
   _input: F :'(
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -2447,6 +2451,105 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554504068}
   m_CullTransparentMesh: 1
+--- !u!1 &1574595929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574595930}
+  - component: {fileID: 1574595932}
+  - component: {fileID: 1574595931}
+  - component: {fileID: 1574595933}
+  m_Layer: 5
+  m_Name: cont
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1574595930
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574595929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1940217818}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -40.999874, y: 69.396034}
+  m_SizeDelta: {x: 334.537, y: 56.627}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &1574595931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574595929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
+    m_FontSize: 42
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 52
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <<Clik anywhere to continue>>
+--- !u!222 &1574595932
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574595929}
+  m_CullTransparentMesh: 1
+--- !u!95 &1574595933
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574595929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b152bd0eaf894b84f86c37f5cc673d93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1585567809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,8 +2876,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875495081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.1477, y: 2.4741, z: 4.3245807}
-  m_LocalScale: {x: 6.0799007, y: 4.553445, z: 1}
+  m_LocalPosition: {x: -13.4591, y: -0.2348, z: 4.3245807}
+  m_LocalScale: {x: 4.9895964, y: 3.7246485, z: 1}
   m_Children: []
   m_Father: {fileID: 758412857}
   m_RootOrder: 2
@@ -2895,7 +2998,7 @@ RectTransform:
   m_Children:
   - {fileID: 1126018105}
   m_Father: {fileID: 1940217818}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2914,6 +3017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conTxt: {fileID: 1574595929}
   _input: kenapa kamu kemari traveller?
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -2995,6 +3099,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1574595930}
   - {fileID: 334677746}
   - {fileID: 775874584}
   - {fileID: 1923854523}
@@ -3150,7 +3255,7 @@ RectTransform:
   m_Children:
   - {fileID: 686392231}
   m_Father: {fileID: 1940217818}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3169,6 +3274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conTxt: {fileID: 1574595929}
   _input: mau nikahin kamu <3
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
