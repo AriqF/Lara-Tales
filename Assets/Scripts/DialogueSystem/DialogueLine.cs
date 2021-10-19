@@ -15,8 +15,9 @@ using UnityEngine.UI;
 
         [Header("Time Parameter")]
         [SerializeField] private float delay;
+        [SerializeField] private float delayBetweenLines;
 
-        [Header("Sound")]
+    [Header("Sound")]
         [SerializeField] private AudioClip sound;
 
         [Header("Character Images")]
@@ -34,7 +35,7 @@ using UnityEngine.UI;
 
         private void Start()
         {
-           StartCoroutine(WriteText(_input, _textHolder, _textColor, _textFont, delay, sound));
+           StartCoroutine(WriteText(_input, _textHolder, _textColor, _textFont, delay, sound, delayBetweenLines));
         }
 
     }
