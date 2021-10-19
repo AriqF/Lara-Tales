@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conTxt: {fileID: 1574595929}
+  continueText: {fileID: 1574595929}
   _input: baru kenal udh ajak kawin aja deh lu, kutil kuda
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conTxt: {fileID: 1574595929}
+  continueText: {fileID: 1574595929}
   _input: halo saya lara
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conTxt: {fileID: 1574595929}
+  continueText: {fileID: 1574595929}
   _input: halo saya traveller
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conTxt: {fileID: 1574595929}
+  continueText: {fileID: 1574595929}
   _input: F :'(
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -2464,7 +2464,7 @@ GameObject:
   - component: {fileID: 1574595931}
   - component: {fileID: 1574595933}
   m_Layer: 5
-  m_Name: cont
+  m_Name: ContinueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3017,7 +3017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conTxt: {fileID: 1574595929}
+  continueText: {fileID: 1574595929}
   _input: kenapa kamu kemari traveller?
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -3274,7 +3274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conTxt: {fileID: 1574595929}
+  continueText: {fileID: 1574595929}
   _input: mau nikahin kamu <3
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
