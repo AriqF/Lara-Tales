@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DialogueSystem
-{
 
     public class DialogueBaseClass : MonoBehaviour
     {
@@ -25,4 +23,3 @@ namespace DialogueSystem
             finished = true;
         }
     }
-}

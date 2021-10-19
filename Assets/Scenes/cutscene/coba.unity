@@ -490,9 +490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: hello, im lara
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  textFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  _input: halo saya lara
+  _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
+  _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.1
   sound: {fileID: 8300000, guid: 0fff1d142ede24642ad9af5fe1c474b9, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -665,9 +665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c1e05a8394ff24ea85b5d17cfa6bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: ruins family laknat
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  textFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  _input: halo saya traveller
+  _textColor: {r: 1, g: 1, b: 1, a: 1}
+  _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.1
   sound: {fileID: 8300000, guid: 0fff1d142ede24642ad9af5fe1c474b9, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}

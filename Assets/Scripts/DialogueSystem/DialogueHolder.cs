@@ -1,8 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-namespace DialogueSystem
-{
     public class DialogueHolder : MonoBehaviour
     {
         private void Awake()
@@ -29,4 +27,4 @@ namespace DialogueSystem
         }
     }
 
-}
+

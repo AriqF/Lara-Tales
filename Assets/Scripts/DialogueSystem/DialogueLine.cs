@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DialogueSystem
-{
+
     public class DialogueLine : DialogueBaseClass
     {
-        private Text textHolder;
+        private Text _textHolder;
 
         [Header("Text Option")]
-        [SerializeField] private string input;
-        [SerializeField] private Color textColor;
-        [SerializeField] private Font textFont;
+        [SerializeField] private string _input;
+        [SerializeField] private Color _textColor;
+        [SerializeField] private Font _textFont;
 
         [Header("Time Parameter")]
         [SerializeField] private float delay;
@@ -26,8 +25,8 @@ namespace DialogueSystem
 
         private void Awake()
         {
-            textHolder = GetComponent<Text>();
-            textHolder.text = "";
+            _textHolder = GetComponent<Text>();
+            _textHolder.text = "";
             
             imageHolder.sprite = characterSprite;
             imageHolder.preserveAspect = true;
@@ -35,9 +34,9 @@ namespace DialogueSystem
 
         private void Start()
         {
-            StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound));
+           StartCoroutine(WriteText(_input, _textHolder, _textColor, _textFont, delay, sound));
         }
 
     }
-}
+
 
