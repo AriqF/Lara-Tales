@@ -636,7 +636,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.477
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -102949,10 +102949,10 @@ RectTransform:
   m_Father: {fileID: 1742903377}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1196.5471, y: 543.53784}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.6077, y: -0.0112}
+  m_SizeDelta: {x: 1345.833, y: 660.8386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &742118504
 GameObject:
@@ -127822,7 +127822,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 800, y: 800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -135590,7 +135590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1486367875750038597, guid: af4b8222b4eeafb45a6b02c8c3d7b665, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1486367875750038599, guid: af4b8222b4eeafb45a6b02c8c3d7b665, type: 3}
       propertyPath: m_RootOrder
