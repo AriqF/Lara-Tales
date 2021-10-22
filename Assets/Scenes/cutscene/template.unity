@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6197082, g: 0.9216259, b: 0.97588295, a: 1}
+  m_IndirectSpecularColor: {r: 0.61970884, g: 0.9216271, b: 0.97588366, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1792,7 +1792,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.5850205
+  orthographic size: 5.8899937
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2486,7 +2486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -40.999874, y: 69.396034}
+  m_AnchoredPosition: {x: -30, y: 32}
   m_SizeDelta: {x: 334.537, y: 56.627}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1574595931
@@ -3111,8 +3111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: -331}
-  m_SizeDelta: {x: 1408.688, y: 278.894}
+  m_AnchoredPosition: {x: -8.727, y: -351.58}
+  m_SizeDelta: {x: 1248.621, y: 237.734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940217819
 MonoBehaviour:
