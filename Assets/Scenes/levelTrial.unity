@@ -5640,6 +5640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LastBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 1498234166470535150, guid: 93efbac198fe6c840bc6b71dc0dc670a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1498234166470535157, guid: 93efbac198fe6c840bc6b71dc0dc670a, type: 3}
       propertyPath: m_RootOrder
       value: 9
