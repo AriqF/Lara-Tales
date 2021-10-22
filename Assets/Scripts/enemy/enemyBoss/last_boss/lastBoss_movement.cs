@@ -18,6 +18,17 @@ public class lastBoss_movement : enemyFollowPlayer
     [SerializeField] Animator enemyAnim;
     SpriteRenderer enemySR;
 
+    private Rigidbody2D body;
+    private BoxCollider2D boxCollider;
+    private LayerMask groundLayer;
+
+    private void Awake()
+    {
+        body = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        groundLayer = LayerMask.GetMask("Ground");
+    }
+
     void Start()
     {
         //get the player transform
@@ -85,6 +96,22 @@ public class lastBoss_movement : enemyFollowPlayer
         {
             enemyAnim.SetBool("CanWalk", false);
         }
+        if (isGrounded())
+        {
+            body.gravityScale = 0;
+            body.velocity = Vector2.zero;
+            print(" ground");
+        }
+        else
+        {
+            body.gravityScale = 1;
+            print("not ground");
+        }
+    }
+    public bool isGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
     }
 
     public void enemyAttack()
