@@ -17,4 +17,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cutscene/intro/intro-3.unity
     guid: e031fbdaf10a8e441b4c49b4a161f6e7
+  - enabled: 1
+    path: Assets/Scenes/cutscene/meet_lara/meet_lara_1.unity
+    guid: 3276e4840f0d51c4f9fbb3a6f8eae474
+  - enabled: 1
+    path: Assets/Scenes/cutscene/meet_lara/meet_lara_2.unity
+    guid: 28b708e8baf273946ba01dd6c736bbf6
+  - enabled: 1
+    path: Assets/Scenes/cutscene/meet_lara/meet_lara_3.unity
+    guid: d5b0ef93c0fb8574f8c4bc932f3ef92b
+  - enabled: 1
+    path: Assets/Scenes/cutscene/meet_lara/meet_lara_4.unity
+    guid: 0c9f0f145e4631b4c8f3a7dfd53c7380
+  - enabled: 1
+    path: Assets/Scenes/Stage_cave.unity
+    guid: f93d8a12b1be1d244a7b88aa2b815ad7
+  - enabled: 1
+    path: Assets/Scenes/cutscene/cave_stage/cave_cutscene.unity
+    guid: 03adfc1d6b8ec2c42a18507ada6618e5
+  - enabled: 1
+    path: Assets/Scenes/Stage_fire.unity
+    guid: 58e02072d824b424680d190b0b570d6d
+  - enabled: 1
+    path: Assets/Scenes/cutscene/fire_stage/fire_wizard_cutscene_1.unity
+    guid: 1061deba234a537419154a250c72f57b
+  - enabled: 1
+    path: Assets/Scenes/cutscene/fire_stage/fire_wizard_cutscene_2.unity
+    guid: 604445e9d0fdb89428108ae39f1ac9bf
+  - enabled: 1
+    path: Assets/Scenes/last_stage.unity
+    guid: c295cbd40b3fd4247858f67dfb11c777
   m_configObjects: {}
