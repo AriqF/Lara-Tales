@@ -254,7 +254,7 @@ MonoBehaviour:
     penantang sebelumnya.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -506,9 +506,9 @@ MonoBehaviour:
   _input: Aku sudah tau. Tapi aku harus melakukannya.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 635071328}
 --- !u!114 &124825228
@@ -684,7 +684,7 @@ MonoBehaviour:
     Guardian
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -813,6 +813,126 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &205226995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 205227000}
+  - component: {fileID: 205226999}
+  - component: {fileID: 205226998}
+  - component: {fileID: 205226997}
+  - component: {fileID: 205226996}
+  m_Layer: 5
+  m_Name: CrossFade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &205226996
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205226995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3709d849e077b9e4981e6402345f37cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &205226997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205226995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &205226998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205226995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &205226999
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205226995}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 2
+  m_TargetDisplay: 0
+--- !u!224 &205227000
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205226995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1774251018}
+  m_Father: {fileID: 1566695053}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &216537016
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +988,7 @@ MonoBehaviour:
   _input: Atas dasar apa, kau ingin mendapatkan berkah dari sang Guardian, tuan pengembara?
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -1092,7 +1212,7 @@ RectTransform:
   m_Children:
   - {fileID: 1454479375}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1154,7 +1274,7 @@ MonoBehaviour:
   _input: Benar Sekali, anda adalah penantang pertama yang datang karena alasan tersebut.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -1257,9 +1377,9 @@ MonoBehaviour:
     berkah sang Guardian.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 756110727}
 --- !u!114 &318548829
@@ -1466,9 +1586,9 @@ MonoBehaviour:
   _input: Tunggu, siapa kau? dan kenapa kau tiba-tiba ada dibelakangku?
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 1046564033}
 --- !u!114 &579059943
@@ -1577,7 +1697,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622509175
 GameObject:
@@ -1716,7 +1836,7 @@ Transform:
   - {fileID: 622509176}
   - {fileID: 335942841}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740210149
 GameObject:
@@ -1773,9 +1893,9 @@ MonoBehaviour:
   _input: Silahkan, nona Lara. Aku siap mendengarkan.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 1537668616}
 --- !u!114 &740210152
@@ -2026,7 +2146,7 @@ MonoBehaviour:
     kedua core dari sang Guardian.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -2211,7 +2331,7 @@ MonoBehaviour:
     sang Gaurdian.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -3473,9 +3593,9 @@ MonoBehaviour:
   _input: Dan juga, aku sendiri juga ingin mengetahui kebenaran dari perang corrupted.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 1147317273}
 --- !u!114 &1044802723
@@ -3650,7 +3770,7 @@ MonoBehaviour:
   _input: Baiklah. Aku akan mulai menjelaskannya.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -3902,9 +4022,9 @@ MonoBehaviour:
   _input: Jadi seperti itu. Maaflkan aku atas tindakan kasarku sebelumnya.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 1406314002}
 --- !u!114 &1182745310
@@ -4328,9 +4448,9 @@ MonoBehaviour:
   _input: Benarkah? entah kenapa aku merasa tersanjung.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 105063639}
 --- !u!114 &1351342311
@@ -4430,9 +4550,9 @@ MonoBehaviour:
   _input: Terima kasih, nona Lara.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 1690801338}
 --- !u!114 &1375468565
@@ -4533,7 +4653,7 @@ MonoBehaviour:
     dari sang Guardian.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -4804,6 +4924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa699be10ed38a48a8755104f6065c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionObject: {fileID: 205226995}
 --- !u!114 &1454479377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5169,7 +5290,7 @@ MonoBehaviour:
     ini.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -5291,6 +5412,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537668614}
   m_CullTransparentMesh: 1
+--- !u!1 &1566695052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566695053}
+  m_Layer: 0
+  m_Name: SceneLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1566695053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566695052}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.410095, y: -0.19999695, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 205227000}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596631031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5721,7 +5873,7 @@ MonoBehaviour:
   _input: Selamat datang di patung sang Guardian, sang penantang
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -5812,6 +5964,94 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &1774251017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774251018}
+  - component: {fileID: 1774251021}
+  - component: {fileID: 1774251020}
+  - component: {fileID: 1774251019}
+  m_Layer: 5
+  m_Name: Black
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1774251018
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774251017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 205227000}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1774251019
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774251017}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1774251020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774251017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1774251021
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774251017}
+  m_CullTransparentMesh: 1
 --- !u!1 &1833628995
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,7 +6190,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844098156
 GameObject:
@@ -6007,7 +6247,7 @@ MonoBehaviour:
   _input: Kedua core ini tersebar di dua tempat yang sangat berbahaya.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -6110,7 +6350,7 @@ MonoBehaviour:
     Guardian? '
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.07
   delayBetweenLines: 3
   sound: {fileID: 8300000, guid: 87f07944a03dc754a86edfa89e038a12, type: 3}
   characterSprite: {fileID: 7671548923230198983, guid: 1071b4f75bcee16479b38746bfa2349e, type: 3}
@@ -6212,9 +6452,9 @@ MonoBehaviour:
   _input: Penjaga patung sang Guardian? Aku baru mendengar hal ini.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 101651328}
 --- !u!114 &1875882570
@@ -6315,9 +6555,9 @@ MonoBehaviour:
     tuaku.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
-  delay: 0.1
+  delay: 0.06
   delayBetweenLines: 3
-  sound: {fileID: 8300000, guid: e4ef168832bd04345823a0f41122122e, type: 3}
+  sound: {fileID: 8300000, guid: 2eeaae806498abd4ab5353cd1db2d1eb, type: 3}
   characterSprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   imageHolder: {fileID: 813224408}
 --- !u!114 &1910547184
