@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/mainMenu.unity
     guid: 27d8c3f502f370c45ae143d485cb37a2
   - enabled: 1
-    path: Assets/Scenes/Stage_cave.unity
-    guid: f93d8a12b1be1d244a7b88aa2b815ad7
+    path: Assets/Scenes/cutscene/intro/intro-1.unity
+    guid: 6ee4d377dfd92b14b9595b4dd7cc7cc8
   - enabled: 1
-    path: Assets/Scenes/Stage_fire.unity
-    guid: 58e02072d824b424680d190b0b570d6d
+    path: Assets/Scenes/cutscene/intro/intro-2.unity
+    guid: 79a9de31ac8cd674b980b8ead86ea3c9
   - enabled: 1
-    path: Assets/Scenes/last_stage.unity
-    guid: c295cbd40b3fd4247858f67dfb11c777
+    path: Assets/Scenes/cutscene/intro/intro-3.unity
+    guid: e031fbdaf10a8e441b4c49b4a161f6e7
   m_configObjects: {}

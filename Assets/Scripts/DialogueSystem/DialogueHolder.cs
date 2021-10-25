@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class DialogueHolder : MonoBehaviour
+public class DialogueHolder : GameManager
 {
+
     private void Awake()
     {
         StartCoroutine(dialogueSequence());
@@ -15,10 +17,10 @@ public class DialogueHolder : MonoBehaviour
             Deactive();
             transform.GetChild(i).gameObject.SetActive(true);
             transform.GetChild(0).gameObject.SetActive(true);
-            yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);
+            yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);          
         }
-        gameObject.SetActive(false);
-
+        //gameObject.SetActive(false);
+        StartCoroutine(base.loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     private void Deactive()
