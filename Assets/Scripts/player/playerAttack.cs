@@ -9,12 +9,14 @@ public class playerAttack : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject swordHitBox;
     [SerializeField] private GameObject[] fireballs;
+    [SerializeField] private bool enableFireballSkill;
 
 
     private Animator anim;
     private playerMovement PlayerMovement;
     private float cooldownTimer = Mathf.Infinity;
     private float comboCoolDown;
+
 
     private void Awake()
     {   
@@ -40,7 +42,7 @@ public class playerAttack : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.E) && cooldownTimer > fireballAttackCooldown && PlayerMovement.canAttack() && 
-            PlayerMovement.fireSkillUnlocked() && PlayerMovement.isGrounded())
+             enableFireballSkill == true && PlayerMovement.isGrounded())
         {
             castFireball();
         }
