@@ -112,19 +112,4 @@ public class playerMovement : MonoBehaviour
     {
         return horizontalInput == 0 && !onWall();
     }
-
-    //public bool fireSkillUnlocked()
-    //{
-    //    //string currentScene = SceneManager.GetActiveScene().name;
-    //    //if (currentScene == "Stage_01"
-    //    Scene currentScene = SceneManager.GetActiveScene();
-    //    if (currentScene.buildIndex > 2) 
-    //    {
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        return false;
-    //    }
-    //}
 }
