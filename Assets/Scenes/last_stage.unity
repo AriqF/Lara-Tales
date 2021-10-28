@@ -180,7 +180,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1ccc4f3123c1ac94a9229dcd4c916c33, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.357
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11074,6 +11074,7 @@ MonoBehaviour:
   - {fileID: 1653878466}
   - {fileID: 206184551}
   - {fileID: 262456106}
+  enableFireballSkill: 1
 --- !u!50 &974386509
 Rigidbody2D:
   serializedVersion: 4

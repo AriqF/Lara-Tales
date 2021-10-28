@@ -64,6 +64,7 @@ public class pauseMenu : GameManager
     {
         Time.timeScale = 0f;
         playerDiePanel.SetActive(true);
+        gameManager.GetComponent<AudioSource>().Pause();
     }
 
     public void showMainMenuWarning()
