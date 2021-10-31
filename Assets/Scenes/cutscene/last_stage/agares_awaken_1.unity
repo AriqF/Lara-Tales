@@ -2480,6 +2480,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  enableFireballSkill: 0
 --- !u!50 &674728952
 Rigidbody2D:
   serializedVersion: 4
@@ -7109,7 +7110,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 476f7b198fc26b247977f7de4b03e527, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
