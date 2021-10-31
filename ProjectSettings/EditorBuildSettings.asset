@@ -45,14 +45,14 @@ EditorBuildSettings:
     path: Assets/Scenes/cutscene/fire_stage/fire_wizard_cutscene_2.unity
     guid: 604445e9d0fdb89428108ae39f1ac9bf
   - enabled: 1
-    path: Assets/Scenes/last_stage.unity
-    guid: c295cbd40b3fd4247858f67dfb11c777
-  - enabled: 1
     path: Assets/Scenes/cutscene/last_stage/agares_awaken_1.unity
     guid: 8353bf91d0b2fb54295d6c6d5d006349
   - enabled: 1
     path: Assets/Scenes/cutscene/last_stage/agares_awaken_2.unity
     guid: d8d6f1d8b8274ce48aa4cac0e61effbe
+  - enabled: 1
+    path: Assets/Scenes/last_stage.unity
+    guid: c295cbd40b3fd4247858f67dfb11c777
   - enabled: 1
     path: Assets/Scenes/cutscene/last_stage/agares_death.unity
     guid: b05105dca624f0d438f76d4e92352cf5

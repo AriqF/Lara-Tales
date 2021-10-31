@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.54183, g: 0.75129807, b: 0.8454974, a: 1}
+  m_IndirectSpecularColor: {r: 0.5418297, g: 0.7512948, b: 0.8454931, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a153e73324b65d43984196b7596cbf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 0}
+  transitionObject: {fileID: 911910988}
   skipPanel: {fileID: 1666872376}
 --- !u!114 &957694289
 MonoBehaviour:

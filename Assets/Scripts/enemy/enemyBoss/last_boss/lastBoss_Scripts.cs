@@ -6,6 +6,7 @@ public class lastBoss_Scripts : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
     [SerializeField] private GameObject hitBox;
+    [SerializeField] private GameObject healthBar;
 
     private Animator anim;
     private bossGolemMovement enemyMove;
@@ -21,7 +22,13 @@ public class lastBoss_Scripts : MonoBehaviour
 
     private void Update()
     {
-       cooldownTimer += Time.deltaTime;
+        if (gameObject.GetComponent<lastBoss_movement>().playerFound == true && gameObject.GetComponent<enemyHealth>().isDead() == false)
+        {
+            healthBar.SetActive(true);
+        }
+
+
+        cooldownTimer += Time.deltaTime;
         if (lowHP())
         {
             attackCooldown = 2.7f;
