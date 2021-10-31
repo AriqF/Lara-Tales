@@ -47,4 +47,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/last_stage.unity
     guid: c295cbd40b3fd4247858f67dfb11c777
+  - enabled: 1
+    path: Assets/Scenes/cutscene/last_stage/agares_awaken_1.unity
+    guid: 8353bf91d0b2fb54295d6c6d5d006349
+  - enabled: 1
+    path: Assets/Scenes/cutscene/last_stage/agares_awaken_2.unity
+    guid: d8d6f1d8b8274ce48aa4cac0e61effbe
+  - enabled: 1
+    path: Assets/Scenes/cutscene/last_stage/agares_death.unity
+    guid: b05105dca624f0d438f76d4e92352cf5
+  - enabled: 1
+    path: Assets/Scenes/cutscene/last_stage/the_truth.unity
+    guid: 43e3bca9da9018042ba1fade102e5b72
+  - enabled: 1
+    path: Assets/Scenes/cutscene/last_stage/the_end_credit.unity
+    guid: 7ddcf8fd78e8fa64c9559ce903e5bc79
   m_configObjects: {}

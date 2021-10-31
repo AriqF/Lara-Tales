@@ -20744,6 +20744,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -8, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -7, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -25566,7 +25576,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: b29a2a3bb5fb6a84e8a4f76cb0ce41fb, type: 2}
   - m_RefCount: 123
     m_Data: {fileID: 11400000, guid: d26337cf2fc3dff4d9bed217dcb6f6a9, type: 2}
@@ -25639,7 +25649,7 @@ Tilemap:
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 129b8d44277e04a4da2aaaef6c4fb58e, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {fileID: 21300000, guid: bb35af95735851440927571ef230221b, type: 3}
   - m_RefCount: 123
     m_Data: {fileID: 21300002, guid: bb35af95735851440927571ef230221b, type: 3}
@@ -25712,7 +25722,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300014, guid: bb35af95735851440927571ef230221b, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 997
+  - m_RefCount: 998
     m_Data:
       e00: 1
       e01: 0
@@ -25749,7 +25759,7 @@ Tilemap:
       e32: 8.04e-43
       e33: 8.06e-43
   m_TileColorArray:
-  - m_RefCount: 997
+  - m_RefCount: 998
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -26147,6 +26157,14 @@ CompositeCollider2D:
         Y: 60000000
       - X: 560000000
         Y: 60000000
+    - - X: 120000000
+        Y: 260000000
+      - X: 80000000
+        Y: 260000000
+      - X: 80000000
+        Y: 240000000
+      - X: 120000000
+        Y: 240000000
     - - X: 0
         Y: 260000000
       - X: -40000000
@@ -26170,14 +26188,6 @@ CompositeCollider2D:
       - X: 680000000
         Y: 240000000
       - X: 720000000
-        Y: 240000000
-    - - X: 120000000
-        Y: 260000000
-      - X: 80000000
-        Y: 260000000
-      - X: 80000000
-        Y: 240000000
-      - X: 120000000
         Y: 240000000
     - - X: 900000000
         Y: 240000000
@@ -26369,9 +26379,17 @@ CompositeCollider2D:
         Y: 100000000
       - X: 20000000
         Y: 120000000
-      - X: -140000000
+      - X: -139999900
         Y: 120000000
-      - X: -140000000
+      - X: -139999900
+        Y: 120000041
+      - X: -139999959
+        Y: 120000100
+      - X: -160000041
+        Y: 120000100
+      - X: -160000100
+        Y: 120000041
+      - X: -160000100
         Y: 100000000
       - X: -220000000
         Y: 100000000
@@ -26661,8 +26679,8 @@ CompositeCollider2D:
       - {x: 3.999971, y: 10}
       - {x: 2, y: 10.00003}
       - {x: 1.9999708, y: 12}
-      - {x: -14, y: 11.99997}
-      - {x: -14.000029, y: 10}
+      - {x: -16.00001, y: 11.999974}
+      - {x: -16.00004, y: 10}
       - {x: -22, y: 10.00003}
       - {x: -22.000029, y: 12}
       - {x: -24, y: 12.00003}
@@ -28238,6 +28256,7 @@ MonoBehaviour:
   - {fileID: 1208985317}
   - {fileID: 1493742317}
   - {fileID: 641465555}
+  enableFireballSkill: 0
 --- !u!50 &2025941541
 Rigidbody2D:
   serializedVersion: 4
