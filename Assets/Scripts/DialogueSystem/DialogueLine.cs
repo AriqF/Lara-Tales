@@ -33,11 +33,6 @@ public class DialogueLine : DialogueBaseClass
         imageHolder.preserveAspect = true;
     }
 
-    private void Update()
-    {
-        
-    }
-
     private void Start()
     {
         StartCoroutine(WriteText(_input, _textHolder, _textColor, _textFont, delay, sound, delayBetweenLines));
