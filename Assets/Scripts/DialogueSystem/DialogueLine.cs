@@ -17,7 +17,7 @@ public class DialogueLine : DialogueBaseClass
     [SerializeField] private float delay;
     [SerializeField] private float delayBetweenLines;
 
-[Header("Sound")]
+    [Header("Sound")]
     [SerializeField] private AudioClip sound;
 
     [Header("Character Images")]
@@ -31,6 +31,11 @@ public class DialogueLine : DialogueBaseClass
             
         imageHolder.sprite = characterSprite;
         imageHolder.preserveAspect = true;
+    }
+
+    private void Update()
+    {
+        
     }
 
     private void Start()

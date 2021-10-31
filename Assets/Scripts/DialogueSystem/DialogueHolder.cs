@@ -20,7 +20,10 @@ public class DialogueHolder : GameManager
             yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);          
         }
         //gameObject.SetActive(false);
-        StartCoroutine(base.loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        if (SceneManager.GetActiveScene().buildIndex == 18)
+            StartCoroutine(base.loadLevel(0));
+        else
+            StartCoroutine(base.loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     private void Deactive()
