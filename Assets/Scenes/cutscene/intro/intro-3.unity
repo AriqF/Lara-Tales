@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6197082, g: 0.9216259, b: 0.97588295, a: 1}
+  m_IndirectSpecularColor: {r: 0.61970884, g: 0.9216271, b: 0.97588366, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1150587274}
-  _input: Banyak sekali orang yang berbondong-bondong kesana, tetepi....
+  _input: Banyak sekali orang yang berbondong-bondong kesana, tetapi....
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.065
