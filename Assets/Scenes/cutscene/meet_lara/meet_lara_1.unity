@@ -7150,7 +7150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1492357414}
-  _input: Kebenaran dari perang corrupted, itu adalah wasiat terkahir kedua orang
+  _input: Kebenaran dari perang corrupted, itu adalah wasiat terakhir kedua orang
     tuaku.
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
