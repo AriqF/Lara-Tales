@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16150025, g: 0.11082818, b: 0.15121773, a: 1}
+  m_IndirectSpecularColor: {r: 0.16149727, g: 0.110826515, b: 0.15121487, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1175356569}
-  _input: Ah, jadi begitu.
+  _input: Ah, jadi begitu.Keluarga Paladin masih mengingat sumpahnya.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.07
@@ -2031,7 +2031,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4571,7 +4571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1175356569}
-  _input: Benar, tetapi, kami harus mengasingkan diri karena Lyra terkana corruption
+  _input: Benar, tetapi, kami harus mengasingkan diri karena Lyra terkena corruption
     yang parah....
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -7316,7 +7316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1175356569}
-  _input: Tidak apa-apa. Tuan pengembara, darimana kau mendapatkan pedang suci?
+  _input: Tidak apa-apa. Tuan pengembara. Selain itu,darimana kau mendapatkan pedang
+    suci?
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.07
@@ -7942,7 +7943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1175356569}
-  _input: Maafkan aku karena membuat dalam bahaya yang mengerikan, tuan traveller....
+  _input: Maafkan aku karena membuatmu dalam bahaya yang mengerikan, tuan traveller....
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.07

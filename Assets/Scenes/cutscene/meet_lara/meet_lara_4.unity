@@ -5404,7 +5404,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 223173131}
-  _input: Setelah mendengar ceritaku, apakah anda yakin melakukannya, tuan pengembara?
+  _input: Setelah mendengar ceritaku, apakah anda masih yakin ingin melakukannya,
+    tuan pengembara?
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
   delay: 0.07

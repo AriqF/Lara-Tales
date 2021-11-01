@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1492357414}
-  _input: Izinkan aku perkenalkan diri. Namaku adalah Lara, penjaga patung  sang
+  _input: Izinkan aku memperkenalkan diri. Namaku adalah Lara, penjaga patung  sang
     Guardian
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}

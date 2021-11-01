@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16150025, g: 0.11082818, b: 0.15121773, a: 1}
+  m_IndirectSpecularColor: {r: 0.16149727, g: 0.110826515, b: 0.15121487, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3849,7 +3849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1517213565}
-  _input: Terima kasih banyak, tuan pengembara. Kalau begitu,akan mulai mengabungkan
+  _input: Terima kasih banyak, tuan pengembara. Kalau begitu,aku akan mulai mengabungkan
     corenya.
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -7114,7 +7114,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

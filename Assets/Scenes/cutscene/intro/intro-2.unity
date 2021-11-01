@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09012476, g: 0.28181586, b: 0.4860474, a: 1}
+  m_IndirectSpecularColor: {r: 0.090123124, g: 0.28181505, b: 0.48604745, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueText: {fileID: 1905215739}
-  _input: Dengan bantuan dari sang Guardian, umat manusia berhasil mengaahkan pemimpin
+  _input: Dengan bantuan dari sang Guardian, umat manusia berhasil mengalahkan pemimpin
     para corrupted
   _textColor: {r: 1, g: 0.9283019, b: 0.9283019, a: 1}
   _textFont: {fileID: 12800000, guid: 53948fb60d5f339468e8a8db4d03ea75, type: 3}
@@ -2698,7 +2698,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
