@@ -26,6 +26,12 @@ public class enemyHealth : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _health, 0, startingHealth);
     }
+    public void instantKill()
+    {
+        takeDamage(100);
+        anim.SetTrigger("die");
+        dead = true;
+    }
 
     public void takeDamage(float _damage)
     {

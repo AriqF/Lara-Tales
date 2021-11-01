@@ -93,12 +93,12 @@ public class golemMovement : enemyFollowPlayer
         {
             body.gravityScale = 0;
             body.velocity = Vector2.zero;
-            print(" ground");
+            //print(" ground");
         }
         else
         {
             body.gravityScale = 1;
-            print("not ground");
+            //print("not ground");
         }
     }
 

@@ -30,9 +30,9 @@ public class SkipButton : GameManager
             StartCoroutine(base.loadLevel(currScene + 1));
         else if (currScene >= 11 && currScene <= 12)
             StartCoroutine(base.loadLevel(13));
-        else if (currScene >= 13 && currScene <= 16)
-            StartCoroutine(base.loadLevel(17));
-        else if (currScene == 17)
+        else if (currScene == 13 || currScene == 14)
+            StartCoroutine(base.loadLevel(15));
+        else if (currScene == 16 || currScene == 17)
             StartCoroutine(base.loadLevel(18));
         else if (currScene == 18)
             StartCoroutine(base.loadLevel(0));

@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerFallHole : MonoBehaviour
+public class FallHole : MonoBehaviour
 {
-    private float damage;
-    private bool hit;
+    private bool hits;
 
     private void Update()
     {
-        if (hit) return;
+        if (hits) return;
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +16,11 @@ public class playerFallHole : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.GetComponent<health>().instantKill();
+        }
+        if(collision.tag == "enemy")
+        {
+            print("golem fall");
+            collision.GetComponent<enemyHealth>().instantKill();
         }
     }
 }
