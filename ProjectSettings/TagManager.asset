@@ -14,6 +14,7 @@ TagManager:
   - enemyTriggerArea
   - secretTile
   - finalCheckPoint
+  - debuffCollectible
   layers:
   - Default
   - TransparentFX
